@@ -1,11 +1,11 @@
 import json
 
-jumlah = int(input("Masukkan jumlah barang = "))
+jumlah = int(input("Masukkan jumlah barang : "))
 daftar = []
 
 for i in range(jumlah):
-    nama_barang = input(f"Nama barang {i+1} = ")
-    harga_barang = int(input(f"Harga barang {i+1} = "))
+    nama_barang = input(f"Nama barang {i+1} : ")
+    harga_barang = int(input(f"Harga barang {i+1} : "))
     daftar.append({'nama': nama_barang, 'harga': harga_barang})
     
 total_harga = sum([barang['harga'] for barang in daftar])
